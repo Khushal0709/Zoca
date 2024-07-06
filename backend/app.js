@@ -8,7 +8,7 @@ import reservationRouter from "./route/reservationRoute.js"
 const app=express();
 dotenv.config();
 app.use(cors({
-  origin: '*',
+  origin: 'https://zoca-frontend.netlify.app/',
   methods: 'GET,POST,PUT,DELETE,OPTIONS',
   allowedHeaders: 'Content-Type, Authorization',
   credentials: true
