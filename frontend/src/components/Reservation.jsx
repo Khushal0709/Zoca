@@ -17,8 +17,9 @@ const Reservation = () => {
   const handleReservation = async (e) => {
     e.preventDefault();
     try {
+      // for server on system use http://localhost:4000/api/v1/reservations/send
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/reservations/send",
+        "https://zoca.onrender.com/api/v1/reservations/send",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
